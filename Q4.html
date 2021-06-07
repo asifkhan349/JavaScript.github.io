@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    function validateForm() {
+  var x = document.myForm.firstname.value;
+  if (x =="" ||(!this.form.checkbox.checked)) {
+    alert("form not submitted");
+    return false;
+  }
+}
+
+</script>
+</head>
+<body>
+<form name="myForm" onsubmit="return validateForm()" method="post">
+   <input type='text' name='firstname' />    <br>
+   <input type='checkbox' name='checkme'<br>
+   <input type='submit' value='submit'/>
+</form>
+
+</body> 
+
+</html>

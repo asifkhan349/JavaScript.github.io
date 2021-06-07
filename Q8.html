@@ -1,0 +1,24 @@
+<html>
+<body>
+   <script>
+   var obj = {
+ "id" : 4, "name" : "abc",
+ "id" : 10, "name" : "ab2",
+ "id" : 5, "name" : "abc3",
+ "id" : 6, "name" : "abc5"
+}
+const sortObject = obj => {
+   const arr = Object.keys(obj).map(el => {
+      return obj[el];
+   });
+   arr.sort((a, b) => {
+      return a - b;
+   });
+   return arr;
+};
+console.log(sortObject(obj));
+
+document.write('<pre>' + JSON.stringify(data, 0, 4) + '</pre>');
+   </script>
+</body>
+</html>
